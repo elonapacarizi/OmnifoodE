@@ -4,8 +4,10 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 4rem;
+  padding: 2.4rem 4.8rem;
   background-color: #fdf2e9;
+  align-items: center;
+
 }
 
 .logo img {
@@ -14,10 +16,11 @@
 
 .nav-bar .nav {
   list-style: none;
-  gap: 3.2rem;
+  gap: 1.6rem;
   font-size: 1.8rem;
   font-weight: 500;
   display: flex;
+  align-items:center ;
 }
 
  .menu:link, .menu:visited {
@@ -98,4 +101,14 @@
 .nav .nav-btn:active {
   background-color: #cf711f;
 }  
+.btn-small {
+  padding: 1.6rem 3.2rem ;
+  font-size: 1.8rem;
+}
+.btn-large {
+  padding: 1.2rem 2.4rem ;
+  font-size: 1.8rem;
+
+}
+
 /* ***********Hero Section End ************ */
