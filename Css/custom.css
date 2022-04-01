@@ -132,6 +132,7 @@
   column-gap: 4.8rem;
   justify-content: center;
   
+  padding-top: 4.8rem;
   justify-items: center;
 
 }
@@ -139,12 +140,19 @@
   justify-items: center;
   width: 35%;
 
+  display: block;
+  position: relative;
+
 }
 
 .step-no {
   font-size:7.4rem ;
   font-weight: 700;
   color: #ddd;
+  margin-bottom: 3.2rem;
+}
+.step-title {
+  margin-bottom: 3.2rem;
 }
 .step-descripion {
   font-size: 1.8rem;
@@ -158,11 +166,12 @@
 }
 .step-img img::before {
   content: "";
-  display: block;
+
+  display: inline-block;
+  position: absolute;
   width: 60%;
   height: 60%;
   background-color: #fdf2e9 ;
-
-
 }
+
 /************* STEPS ENDING  *****************/
