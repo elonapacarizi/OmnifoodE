@@ -160,18 +160,39 @@
   letter-spacing: 1.0px;
 
 }
-.step-img{
+.step-image {
+  position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.step-img img::before {
+.step-image::before,
+.step-image::after {
   content: "";
 
-  display: inline-block;
+  display: block;
   position: absolute;
+
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+}
+.step-image::before {
   width: 60%;
-  height: 60%;
-  background-color: #fdf2e9 ;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  z-index: -2;
+
+
+}
+.step-image::after {
+width: 50%;
+padding-bottom: 50%;
+background-color: #fae5d3;
+z-index: -1;
+
 }
 
 /************* STEPS ENDING  *****************/
